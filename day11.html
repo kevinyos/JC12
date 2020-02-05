@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="./day11.js">
+    </script>
+    <style>
+        tr,td,table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Filter</legend>
+            <p>Nama: <input type="text" id="namaFilter" oninput="filterNama()"></p>
+            <p>Harga: <input type="number" id='hargaFilter1' onkeyup="filterHarga()"> - <input type="number" id='hargaFilter2' onkeyup="filterHarga()"></p>
+            <p>Kategori: <select name="categoryFilter" id="categoryInput2" onchange="filterCategory()"></select></p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Input Data</legend>
+            <table>
+                <td>
+                    <input type="text" id="nama" placeholder="nama">
+                </td>
+                <td>
+                    <input type="number" id="harga" placeholder="harga">
+                </td>
+                <td>
+                    <select name="category" id="categoryInput">
+                        
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="stock" placeholder="stock">
+                </td>
+            </table>
+            <input type="button" value="Add Data" onclick="addData()">
+        </fieldset>
+        <fieldset>
+            <legend>Daftar Menu</legend>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Category</th>
+                    <th>Marga</th>
+                    <th>Stock</th>
+                    <th colspan="3">Action</th>
+                </thead>
+                <tbody id="output">
+
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Cart</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nama</th>
+                        <th>Category</th>
+                        <th>Harga</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart">
+                   
+                </tbody>
+            </table>
+            <input id="payment" type="button" value="Payment" onclick="">
+        </fieldset> 
+    </form>
+</body>
+</html>
