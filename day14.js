@@ -9,5 +9,6 @@ const berapaTahun = (a,b,c,d) =>{
     }
 }
 
-
-console.log(berapaTahun(1000,2,50,1214))
+console.log(berapaTahun(1000,2,50,1200))
+console.log(berapaTahun(1500,5,100,5000))
+console.log(berapaTahun(1500000,2.5,10000,2000000))
